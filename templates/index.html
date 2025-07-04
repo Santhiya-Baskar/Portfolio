@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="style__switcher">
+      <div class="style__switcher-toggler">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="theme__toggler">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Santhiya Baskar</a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__first">Hello</span>
+            <h1 class="home__title"><span>I'm</span> Santhiya Baskar <br /><span>a Java Developer</span></h1>
+            <p class="home__description">
+              Dedicated Java backend and frontend developer with strong knowledge
+              of data structures, algorithms, and computer networking. Skilled
+              problem solver with a passion for writing clean, maintainable code.
+              Collaborative team player eager to learn and apply new technologies
+              to deliver business-focused solutions.
+            </p>
+            <div class="home__btn">
+              <a href="#contact" class="btn">Hire mee</a>
+              <a href="#portfolio" class="btn btn__transparent">Portfolio</a>
+            </div> 
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__content">
+            <h2 class="section__title" data-title="Who I Am?">
+              I'm Santhiya Baskar <br />Java and Frontend Developer
+            </h2>
+            <p class="about__description">
+              I am a passionate Java and frontend developer with solid knowledge
+              in data structures, algorithms, and networking. I enjoy working in
+              teams, learning new technologies, and applying them to create
+              impactful solutions. My goal is to deliver high-quality software that
+              meets real-world needs while continuously improving my skills.
+            </p>
+            <ul class="about__data__grid">
+              <li class="data__item">
+                <h3 class="data__title">Name</h3>
+                <span class="data__description">Santhiya Baskar</span>
+              </li>
+              <li class="data__item">
+                <h3 class="data__title">Age</h3>
+                <span class="data__description">20</span>
+              </li>
+              <li class="data__item">
+                <h3 class="data__title">Email</h3>
+                <span class="data__description">santhiyabaskar2005@gmail.com</span>
+              </li>
+              <li class="data__item">
+                <h3 class="data__title">Phone</h3>
+                <span class="data__description">8668000434</span>
+              </li>
+            </ul>
+            <div class="box">
+              <div class="about__links">
+                <a href="#" class="about__link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="about__link"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section" id="experience">
+        <h2 class="section__title title-center" data-title="My Journey">
+          Qualification
+        </h2>
+        <div class="resume__container container grid">
+          <div class="resume__group">
+            <h3 class="resume__heading">Experience</h3>
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Internship</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">XYZ Company</h3>
+                    <span class="resume__date">2022-2023</span>
+                  </div>
+                  <p class="resume__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    vero excepturi obcaecati accusamus, maiores fugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Project</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">E-Commerce Website</h3>
+                    <span class="resume__date">2023-2024</span>
+                  </div>
+                  <p class="resume__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    vero excepturi obcaecati accusamus, maiores fugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Hands-on</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Presentation</h3>
+                    <span class="resume__date">2020-2022</span>
+                  </div>
+                  <p class="resume__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    vero excepturi obcaecati accusamus, maiores fugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume__group">
+            <h3 class="resume__heading">Education</h3>
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Undergraduate</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">B.Tech Information Technology</h3>
+                    <span class="resume__date">2022-2026</span>
+                  </div>
+                  <p class="resume__description">
+                    Vivekanandha College of Technology for Women<br />
+                    2022-present | CGPA: 7.89 (upto 5th Semester)
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Secentary</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">State Board</h3>
+                    <span class="resume__date">2020-2022</span>
+                  </div>
+                  <p class="resume__description">
+                    HSC with <b>83%</b> at St. Mary's Girls Higher Secondary
+                    School, Devakottai.
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Certification</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Java</h3>
+                    <span class="resume__date">2023</span>
+                  </div>
+                  <p class="resume__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    vero excepturi obcaecati accusamus, maiores fugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <h2 class="section__title title-center" data-title="My Skills">
+          Skills
+        </h2>
+        <div class="skills__container container grid">
+          <div class="skills__item">
+            <div class="skills__title">
+              <h3 class="skills__name">Java</h3>
+              <span class="skills__no">80%</span>
+            </div>
+            <p class="skills__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
+              excepturi obcaecati accusamus, maiores fugiat.
+            </p>
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 80%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__title">
+              <h3 class="skills__name">HTML & CSS</h3>
+              <span class="skills__no">90%</span>
+            </div>
+            <p class="skills__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
+              excepturi obcaecati accusamus, maiores fugiat.
+            </p>
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 90%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__title">
+              <h3 class="skills__name">DSA</h3>
+              <span class="skills__no">85%</span>
+            </div>
+            <p class="skills__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
+              excepturi obcaecati accusamus, maiores fugiat.
+            </p>
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 85%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__title">
+              <h3 class="skills__name">JavaScript</h3>
+              <span class="skills__no">50%</span>
+            </div>
+            <p class="skills__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
+              excepturi obcaecati accusamus, maiores fugiat.
+            </p>
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 50%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__title">
+              <h3 class="skills__name">Computer Networking</h3>
+              <span class="skills__no">65%</span>
+            </div>
+            <p class="skills__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
+              excepturi obcaecati accusamus, maiores fugiat.
+            </p>
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 65%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__title">
+              <h3 class="skills__name">Cloud Computing</h3>
+              <span class="skills__no">57%</span>
+            </div>
+            <p class="skills__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero
+              excepturi obcaecati accusamus, maiores fugiat.
+            </p>
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 57%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Get in Touch">
+          Contact Me
+        </h2>
+        <div class="contact__container container grid">
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="fa-solid fa-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Call Us</h3>
+                <span class="contact__data">8668000434</span>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email Us</h3>
+                <span class="contact__data">santhiyabaskar2005@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Address</h3>
+                <span class="contact__data"
+                  >88,89 Mothilal Street, Karaikudi, 630104</span
+                >
+              </div>
+            </div>
+          </div>
+          <form action="" class="contact__form">
+            <div class="form__group">
+              <div class="form__input">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="input__control"
+                  required
+                />
+              </div>
+              <div class="form__input">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input__control"
+                  required
+                />
+              </div>
+              <div class="form__input">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="input__control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__input">
+              <textarea
+                placeholder="Message"
+                class="input__control textarea"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn contact__btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">
+          © <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Santhiya. All rights reserved.
+        </p>
+        <div class="footer__links">
+          <a href="#" class="footer__link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="footer__link"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
